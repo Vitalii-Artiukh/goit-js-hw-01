@@ -1,4 +1,6 @@
 function getShippingMessage(country, price, deliveryFee) {
+  let totalPrice = price + deliveryFee;
+  // console.log('totalPrice', totalPrice);
   return `Shipping to ${country} will cost ${price + deliveryFee} credits`;
 }
 
